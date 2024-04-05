@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  @media (max-width: 900px) {
+    font-size: 90%;
+  }
+  @media (max-width: 768px) {
+    font-size: 100%;
+  }
+}
+
+img {
+  object-fit: cover !important;
+}
+
+%base-content {
+  @apply font-bold my-2;
+}
+
+p {
+  @extend %base-content;
+}
+
+h1 {
+  @extend %base-content;
+  @apply text-4xl;
+}
+h2 {
+  @extend %base-content;
+  @apply text-3xl;
+}
+h3 {
+  @extend %base-content;
+  @apply text-2xl;
+}
+h4 {
+  @extend %base-content;
+  @apply text-xl;
+}
+h5 {
+  @extend %base-content;
+  @apply text-lg;
+}
+h6 {
+  @extend %base-content;
+  @apply text-base;
+}
+
+a {
+  @apply hover:underline;
+  &[target='_blank'] {
+    @apply text-sky-500 drop-shadow-sm shadow-sky-700 text-lg;
+  }
+}
+
+span,
+q,
+a {
+  @apply text-base p-0 m-0;
+}
+
+ul {
+  @apply pl-2 list-disc;
+  > li {
+    @apply my-2;
+  }
+}
+
+em,
+i {
+  @apply italic;
+}
+
+q {
+  quotes: none;
+}
+
+table tr {
+  @apply border-b border-gray-200;
+  td,
+  th {
+    @apply p-2;
+  }
+}
+
+.p-m0 p {
+  @apply m-0 p-0;
+}
+
+span.non-break {
+  font-size: inherit;
+}
