@@ -17,4 +17,5 @@ next-env.d.ts
 
 # lock file
 bun.lockb
+bun.lock
 project-words.txt

@@ -1,4 +1,4 @@
-import { Spinner } from '@nextui-org/react';
+import { Spinner } from '@heroui/react';
 import Text from './Text';
 
 /**
@@ -14,10 +14,10 @@ export default function Loading({
   description?: string;
 }) {
   return (
-    <>
-      <Spinner />
+    <div className="flex flex-col items-center justify-center h-screen">
       <Text as={'p'} title={message} />
+      <Spinner />
       <Text as={'i'} title={description} />
-    </>
+    </div>
   );
 }

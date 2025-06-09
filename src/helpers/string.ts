@@ -1,4 +1,4 @@
-import { HOST_URL } from '@/configs/site.config';
+import { MAIN_URL } from '@/configs/site.config';
 import { UrlParamQuery } from '@/types/URL.types';
 
 /**
@@ -74,13 +74,13 @@ export function parseObj(obj: string): object | null {
  * @param {UrlParamQuery} paramQuery - An object containing both `param` and `query` properties.
  *   - `param`: An optional array of path parameters to be appended to the URL.
  *   - `query`: An optional object representing query parameters, where keys are parameter names and values are parameter values.
- * @param {string} [domain=HOST_URL] - The domain to prepend to the path, defaults to HOST_URL if not provided.
+ * @param {string} [domain=MAIN_URL] - The domain to prepend to the path, defaults to MAIN_URL if not provided.
  * @returns {string} - The constructed URL string including the domain, path, path parameters (if any), and query parameters (if any).
  */
 export function urlBuilder(
   path: string,
   { param, query }: UrlParamQuery,
-  domain = HOST_URL
+  domain = MAIN_URL
 ) {
   const url = new URL(path, domain);
   if (param) {

@@ -1,5 +1,6 @@
 import BackHome from '@/components/BackHome';
 import Loading from '@/components/Loading';
+import { MAIN_URL } from '@/configs/site.config';
 
 export function generateMetadata({ status = 404 }) {
   return {
@@ -13,7 +14,7 @@ export function generateMetadata({ status = 404 }) {
       },
       description: 'Xin lỗi, trang web này không tồn tại',
     },
-    metadataBase: new URL(process.env.NEXT_PUBLIC_HOST as string),
+    metadataBase: new URL(MAIN_URL as string),
   };
 }
 const NotFound = ({ status = 404 }) => {

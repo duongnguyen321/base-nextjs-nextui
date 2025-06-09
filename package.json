@@ -13,9 +13,9 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.15",
-    "@nextui-org/react": "^2.2.9",
-    "@nextui-org/system": "^2.0.15",
-    "@nextui-org/theme": "^2.1.18",
+    "@heroui/react": "2.7.9",
+    "@heroui/system": "2.4.16",
+    "@heroui/theme": "2.4.16",
     "@react-aria/ssr": "^3.9.2",
     "@react-aria/visually-hidden": "^3.8.10",
     "clsx": "^2.1.0",
@@ -26,7 +26,8 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.72.0",
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.0",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "typescript": "^5",
